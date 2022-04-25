@@ -468,12 +468,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61d31aed1320bc44aa9df156ee9b329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 1
   targets:
   - {fileID: 258542154}
   - {fileID: 519313361}
-  toplanmaNoktasi: {fileID: 258542154}
   tower: {fileID: 1535674073}
+  toplanmaNoktasi: {fileID: 2115643014}
 --- !u!191 &244738372
 OffMeshLink:
   m_ObjectHideFlags: 0
@@ -939,6 +938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6f26087acf08d64ba990c90d3e9cb64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
   isPlayerCatched: 0
   bridge: {fileID: 985507063}
 --- !u!4 &507439845
@@ -1925,11 +1925,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 137c7834a0333e94c88184685ff08edf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 1
   targets:
   - {fileID: 479930882}
   - {fileID: 1383422149}
-  toplanmaNoktasi: {fileID: 1493495546}
 --- !u!195 &1341099981
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2491,12 +2489,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61d31aed1320bc44aa9df156ee9b329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 1
   targets:
   - {fileID: 1203608220}
   - {fileID: 258542154}
-  toplanmaNoktasi: {fileID: 258542154}
   tower: {fileID: 1440331927}
+  toplanmaNoktasi: {fileID: 1231324745}
 --- !u!1 &1788703313
 GameObject:
   m_ObjectHideFlags: 0
