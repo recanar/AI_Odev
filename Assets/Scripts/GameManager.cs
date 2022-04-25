@@ -2,11 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum AgentState
+{
+    Devriye,
+    Takip,
+    Saldiri,
+    KuleyeGit
+}
+public interface IDevriyeGezebilir
+{
+    void Devriye();
+}
+public interface ITakipEdebilir
+{
+    void Takip();
+}
+public interface ISaldirabilir
+{
+    void Saldir();
+}
+public interface IKuleyeGidebilir
+{
+    void KuleyeGit();
+}
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public AgentState currentState;
     public bool isPlayerCatched;
     public Transform bridge;
+
     void Awake()
     {
         if (Instance == null) // If there is no instance already
@@ -19,8 +44,10 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject); // Destroy the GameObject, this component is attached to
         }
     }
-
-
+    private void Start()
+    {
+        currentState = AgentState.Devriye;//baþlangýç state
+    }
     // Update is called once per frame
     void Update()
     {
@@ -28,8 +55,9 @@ public class GameManager : MonoBehaviour
         {
             for (int i = 0; i < bridge.childCount; i++)
             {
-                bridge.GetChild(i).gameObject.SetActive(true);
+                bridge.GetChild(i).gameObject.SetActive(true);//var olan bütün köprüleri göster
             }
+            currentState = AgentState.KuleyeGit;//tanklar kuleye gitmesi için statei kuleye git yap
         }
     }
 }
