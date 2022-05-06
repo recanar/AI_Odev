@@ -10,7 +10,7 @@ public abstract class Enemy : MonoBehaviour
     protected Transform[] targets; // devriye noktalarý
     protected int targetIndex;
 
-    public void Devriye()//devriye olayý bütün düþmanlarda aynýdýr (belirli noktalar arasýnda)
+    public void Devriye()//devriye olayý bütün düþmanlarda aynýdýr kalýtým kullanýldý (belirli noktalar arasýnda)
     {
         if (agent.remainingDistance < 1f)  // vardý
         {

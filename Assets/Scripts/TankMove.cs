@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class TankMove : Enemy,IDevriyeGezebilir,IKuleyeGidebilir,ITakipEdebilir
+public class TankMove : Enemy//,IDevriyeGezebilir,IKuleyeGidebilir,ITakipEdebilir
 {
     OffMeshLink offMeshLinkTank;
     [SerializeField]

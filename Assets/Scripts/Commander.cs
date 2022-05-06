@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Commander : Enemy,IDevriyeGezebilir,ISaldirabilir,ITakipEdebilir
+public class Commander : Enemy//,IDevriyeGezebilir,ISaldirabilir,ITakipEdebilir
 {
     private float timeCount;
 
@@ -20,21 +20,12 @@ public class Commander : Enemy,IDevriyeGezebilir,ISaldirabilir,ITakipEdebilir
     // Update is called once per frame
     void Update()
     {
-        // Toplan
-        //if (currentState == AgentState.Toplan)
-        //{
-        //    agent.SetDestination(toplanmaNoktasi.position);
-
-        //    // bu iþ bittikten sonra
-        //    currentState = AgentState.Devriye;
-        //}
         if (GameManager.Instance.currentState == AgentState.Devriye)
             Devriye();
         else if (GameManager.Instance.currentState == AgentState.Takip)
             Takip();
         else if (GameManager.Instance.currentState == AgentState.Saldiri)
             Saldir();
-
     }
     public void Takip()
     {

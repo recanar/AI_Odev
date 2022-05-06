@@ -9,22 +9,22 @@ public enum AgentState
     Saldiri,
     KuleyeGit
 }
-public interface IDevriyeGezebilir
-{
-    void Devriye();
-}
-public interface ITakipEdebilir
-{
-    void Takip();
-}
-public interface ISaldirabilir
-{
-    void Saldir();
-}
-public interface IKuleyeGidebilir
-{
-    void KuleyeGit();
-}
+//public interface IDevriyeGezebilir
+//{
+//    void Devriye();
+//}
+//public interface ITakipEdebilir
+//{
+//    void Takip();
+//}
+//public interface ISaldirabilir
+//{
+//    void Saldir();
+//}
+//public interface IKuleyeGidebilir
+//{
+//    void KuleyeGit();
+//}
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;

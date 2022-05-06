@@ -18,7 +18,11 @@ public class PlayerController : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
 
-        gameObject.transform.Translate(new Vector3(h, 0, v)*Time.deltaTime*speed);
+        if (GameManager.Instance.currentState!=AgentState.KuleyeGit)
+        {
+            gameObject.transform.Translate(new Vector3(h, 0, v) * Time.deltaTime * speed);
+        }
+
         //if (Input.GetMouseButtonDown(0))
         //{
         //    RaycastHit hit;
